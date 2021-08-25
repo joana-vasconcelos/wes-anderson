@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The World of Wes Anderson</title>
+    <link
+      rel="stylesheet"
+      ;
+      type="text/css"
+      ;
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400, 700|Didact+Gothic|Abril+Fatface|Arvo"
+      ;
+    />
+    <style>
+      body {
+        background: linear-gradient(#fbc03e, #fddf9e);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100%;
+        background-size: cover;
+      }
+
+      .header {
+        text-align: center;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/509/original/header-top.jpg?1620153106);
+        max-width: 100%;
+        padding: 10px;
+        background-size: cover;
+        height: 275px;
+        margin: 0 0 40px 0;
+      }
+
+      h1 {
+        font-family: "futura", sans-serif;
+        letter-spacing: 1px;
+        font-size: 32px;
+        color: #fbc03e;
+        margin: 50px 0 5px 0;
+      }
+
+      h2 {
+        font-family: "futura", sans-serif;
+        letter-spacing: 4px;
+        font-size: 50px;
+        color: #fbc03e;
+        margin: 10px 0 10px 0;
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0px;
+      }
+
+      li {
+        display: inline-block;
+        margin: 50px 20px 30px 20px;
+        font-family: "Josefin Sans";
+        transition: all 200ms ease-in-out;
+        color: #c54426;
+        font-weight: bold;
+        background: rgba(238, 162, 139, 1);
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 2px;
+      }
+
+      li:hover {
+        cursor: pointer;
+        color: rgba(238, 162, 139, 1);
+        background: #c54426;
+      }
+
+      h3 {
+        font-family: "futura";
+        font-size: 28px;
+        color: #c54426;
+        text-align: center;
+        margin: 10px auto 5px auto;
+        letter-spacing: 3px;
+      }
+
+      hr {
+        width: 1060px;
+        height: 2px;
+        background: #c54426;
+        border: none;
+        margin: 10px auto;
+      }
+
+      .titles {
+        font-size: 22px;
+        font-weight: bold;
+        color: #c54426;
+      }
+
+      .text {
+        font-family: "Arvo";
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin: 20px 100px;
+        line-height: 30px;
+        text-align: justify;
+      }
+
+      .andersonExplained {
+        width: 350px;
+        display: inline-block;
+        margin: 5px auto;
+        max-width: 100%;
+      }
+
+      .images {
+        text-align: center;
+        display: block;
+      }
+
+      .footerStyle {
+        font-family: "Josefin Sans";
+        font-size: 10px;
+        text-align: right;
+        color: #7c9383;
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px auto 30px auto;
+      }
+
+      .film {
+        text-align: center;
+        margin: 10px;
+        background: rgba(238, 162, 139, 0.7);
+        padding: 5px 5px 5px 5px;
+        transition: all 200ms ease-in-out;
+        border-radius: 3px;
+        max-width: 280px;
+      }
+
+      .movieCover {
+        width: 250px;
+        margin: 5px;
+        border-radius: 3px;
+      }
+
+      h4 {
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #7c9383;
+        margin: 10px 0 5px 0;
+        padding: 7px;
+        border-radius: 2px;
+        font-weight: bold;
+      }
+
+      .filmText {
+        font-family: "Arvo";
+        font-size: 11px;
+        margin: 0 20px 5px 20px;
+        line-height: 18px;
+        text-align: justify;
+      }
+
+      h5 {
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #7c9383;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px auto;
+      }
+
+      .frenchDispatch {
+        font-family: "Arvo";
+        font-size: 16px;
+        margin: 20px 125px 30px 125px;
+        line-height: 30px;
+        text-align: justify;
+      }
+
+      iframe {
+        display: block;
+        margin: 20px auto;
+      }
+
+      .moreInfo {
+        color: #fbc03e;
+        background: #c54426;
+        border: 2px solid #c54426;
+        padding: 6px 8px;
+        font-family: "futura", Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        max-width: 60px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .moreInfo:hover {
+        cursor: pointer;
+        background: #fbc03e;
+        color: #c54426;
+        border: 2px solid #c54426;
+      }
+
+      .watchHere {
+        color: #fbc03e;
+        background: #c54426;
+        border: 2px solid #c54426;
+        padding: 15px 20px;
+        font-family: "futura", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto;
+        transition: all 300ms ease-in-out;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #fbc03e;
+        color: #c54426;
+        border: 2px solid #c54426;
+      }
+
+      .footer {
+        font-family: "Josefin Sans";
+        font-size: 12px;
+        text-align: center;
+        color: #7c9383;
+        padding: 5px;
+      }
+
+      .socialMedia {
+        width: 18px;
+        display: inline;
+        position: relative;
+        margin: 8px 4px 0px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <h1>The world of</h1>
+
+        <h2>WES ANDERSON</h2>
+      </div>
+
+      <div>
+        <ul>
+          <li>Story</li>
+          <li>Production Design</li>
+          <li>Color</li>
+          <li>Cinematography</li>
+          <li>Music</li>
+          <li>Films</li>
+          <li>The French Dispatch</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <hr />
+        <h3>🎬 THE WES ANDERSON STYLE EXPLAINED 🎬</h3>
+
+        <hr />
+
+        <p class="text">
+          The Wes Anderson style is hard to miss. From his cinematography,
+          production design, color, and music, there’s just no mistaking Wes
+          Anderson movies. His creative and stylistic fingerprints can be found
+          in his work from top to bottom — and this is what makes him a true
+          auteur.
+          <br />
+          <br />
+
+          <span class="titles"> Story </span>
+
+          <br />
+
+          It's known that Anderson crafts his stories from the perspectives of
+          young adults. But the other thing Anderson does so well is building
+          ensembles of flawed misfits. They're also walking contradictions. The
+          children act like adults. And the adults act like children. If you
+          want to build a story like Anderson, write flawed characters with
+          selfish desires and make them walking contradictions.
+
+          <br />
+
+          <span class="images">
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/548/original/story-1.jpg?1620169319"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/549/original/story-2.jpg?1620169327"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/550/original/story-3.jpg?1620169334"
+              alt=""
+            />
+          </span>
+          <br />
+
+          <span class="titles"> Production Design </span>
+          <br />
+
+          The production design in Wes Anderson films is undeniably unique. He
+          does this primarily through costumes and set design, which are meant
+          to act as representations of either the characters or the story. Take
+          the costumes in <strong>The Royal Tenenbaums</strong>. Chas's life has
+          been chaotic. His father tormented him as a boy, his wife was killed
+          in a fire, he is running from his past. So, Anderson dresses him and
+          his sons in jogging suits. Anderson knows it's the clothes that make
+          the man. Anderson also makes sure that his settings are also
+          characters. In <strong>The Life Aquatic with Steve Zissou</strong>,
+          the set dressing is robust, implies a rich history, and helps to build
+          mood and tone. Anderson knows that Steve's boat is a character. So, he
+          shows you the layout, the personality, and its flaws.
+
+          <br />
+          <span class="images">
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/545/original/production-1.jpg?1620169290"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/553/original/production-2.jpg?1620170430"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/547/original/production-3.jpg?1620169311"
+              alt=""
+            />
+          </span>
+          <br />
+
+          <span class="titles"> Color</span>
+          <br />
+
+          Anderson builds his worlds around color. The browns and yellows of
+          <strong>Moonrise Kingdom</strong>, or the blues and reds of
+          <strong>The Life Aquatic</strong>. His use of pastel shades supports
+          his charming and vintage sensibilities. Color can effectively build
+          mood and tone, but color can also be used as a narrative device, like
+          the colors in <strong>The Grand Budapest Hotel</strong>. In the early
+          years when the hotel was in its heyday, notice the color choices:
+          bright red walls, rich purples, soft and inviting pinks. Now look at
+          the colors when it's past its prime: burnt oranges, drab greens, wood
+          tones. The change in color presents the status of the hotel. As the
+          prestige faded, so did the colors.
+          <br />
+          <span class="images">
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/538/original/color-1.jpg?1620169230"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/539/original/color-2.jpg?1620169235"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/540/original/color-3.jpg?1620169240"
+              alt=""
+            />
+          </span>
+          <br />
+
+          <span class="titles"> Cinematography </span>
+          <br />
+
+          Wes Anderson is known for his symmetrical framing. It's a constant
+          throughout his works. The symmetry is a nice calling card, but it's
+          just one aspect of Anderson's style. A large part of what makes a Wes
+          Anderson shot is how he frames for mise-en-scène, where every element
+          in the frame is carefully considered and functions to depict space,
+          time period, theme, plot, and character. As a result, he uses
+          composition, blocking, and camera movement to create a complex ballet.
+          It is also important to notice the change in aspect ratio throughout
+          <strong>The Grand Budapest Hotel</strong>. In the a980's intro, it's
+          in 1.85; in the 1960's, it's an anamorphic 2.4; and in 1930's, it's
+          the academy 1.37. Anderson uses his aspect ratios to suggest the time
+          period and mood of the story.
+
+          <br />
+          <span class="images">
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/535/original/cinematography-1.jpg?1620169209"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/536/original/cinematography-2.jpg?1620169218"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/537/original/cinematography-3.jpg?1620169224"
+              alt=""
+            />
+          </span>
+          <br />
+
+          <span class="titles"> Music </span>
+          <br />
+
+          The music in Wes Anderson's films are often a mixture of folk and euro
+          rock. This can include original scores, but also songs from his
+          childhood. The music choices are all about reinforcing the energy of
+          the scenes. Take the music from <strong>The Life Aquatic</strong>. The
+          film uses a combination of an original score composed by Mark
+          Mothersbaugh, but also David Bowie, with covers by Seu Jorge. During
+          the shootout, he leverages the adrenaline kick of "Search and Destroy"
+          by Iggy and the Stooges, but during a particularly sad moment, he uses
+          "The Way I Feel Inside" by The Zombies.
+
+          <br />
+          <span class="images">
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/542/original/music-1.jpg?1620169263"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/543/original/music-2.jpg?1620169273"
+              alt=""
+            />
+            <img
+              class="andersonExplained"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/544/original/music-3.jpg?1620169282"
+              alt=""
+            />
+          </span>
+          <span class="footerStyle">
+            The Wes Anderson Style Explained © Studio Binder
+          </span>
+        </p>
+      </div>
+
+      <div>
+        <hr />
+        <h3>🎞️ FILMS 🎞️</h3>
+
+        <hr />
+      </div>
+
+      <div class="row1">
+        <div class="film">
+          <h4>Isle of Dogs</h4>
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/492/original/isle-of-dogs.jpg?1620139829"
+            alt=""
+          />
+          <p class="filmText">
+            An outbreak of dog flu has spread through the city of Megasaki,
+            Japan, and Mayor Kobayashi has demanded all dogs to be sent to Trash
+            Island. On the island, a young boy named Atari sets out to find his
+            lost dog, Spots, with the help of five other dogs.
+          </p>
+
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=dt__kig8PVU&ab_channel=SearchlightPictures"
+            target="_blank"
+          >
+            Trailer</a
+          >
+
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt5104604/?ref_=nm_flmg_dr_2"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+
+        <div class="film">
+          <h4>The Grand Budapest Hotel</h4>
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/491/original/grand-budapest-hotel.jpg?1620139821"
+            alt=""
+          />
+          <p class="filmText">
+            The adventures of a legendary concierge at a famous European hotel
+            between the wars and the lobby boy who becomes his most trusted
+            friend, a theft and recovery of a priceless Renaissance painting and
+            a battle for an enormous family fortune.
+          </p>
+
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=1Fg5iWmQjwk&ab_channel=SearchlightPictures"
+            target="_blank"
+          >
+            Trailer</a
+          >
+
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt2278388/?ref_=nm_flmg_dr_4"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+
+        <div class="film">
+          <h4>Moonrise Kingdom</h4>
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/493/original/moonrise-kingdom.jpg?1620139834"
+            alt=""
+          />
+
+          <p class="filmText">
+            Set on an island off the coast of New England in the 60s, as a young
+            boy and girl fall in love they are moved to run away together. The
+            town mobilizes to search for them and the town is turned upside down
+            - which might not be such a bad thing.
+          </p>
+
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=_eOI3AamSm8&ab_channel=UniversalPicturesIreland"
+            target="_blank"
+          >
+            Trailer</a
+          >
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt1748122/?ref_=nm_flmg_dr_9"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+
+        <div class="film">
+          <h4>Fantastic Mr. Fox</h4>
+
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/495/original/fantastic-mr-fox.jpg?1620143783"
+            alt=""
+          />
+          <p class="filmText">
+            This is the story of Mr. Fox and his wild ways of hen heckling,
+            turkey taking, and cider sipping, nocturnal, instinctive adventures.
+            It is a tale of crossing the line of family responsibilities,
+            midnight adventures, friendships and awakenings.
+          </p>
+
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=n2igjYFojUo&ab_channel=SearchlightPictures"
+            target="_blank"
+          >
+            Trailer</a
+          >
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt0432283/?ref_=nm_flmg_dr_11"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="film">
+          <h4>The Darjeeling Limited</h4>
+
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/494/original/darjeeling-limited.jpg?1620143776"
+            alt=""
+          />
+          <p class="filmText">
+            A year after the accidental death of their father, three brothers --
+            each suffering from depression - meet for a train trip across India.
+            The brothers argue, sulk, resent each other, and fight. Amid foreign
+            surroundings, can the brothers sort out their differences?
+          </p>
+
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=aO1bYukdvLI&ab_channel=SearchlightPictures"
+            target="_blank"
+          >
+            Trailer</a
+          >
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt0838221/?ref_=nm_flmg_dr_14"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+        <div class="film">
+          <h4>The Life Aquatic with Steve Zissou</h4>
+
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/496/original/life-aquatic.jpg?1620143791"
+            alt=""
+          />
+
+          <p class="filmText">
+            When his partner is killed by the mysterious and possibly
+            nonexistent Jaguar Shark, Steve Zissou sets off for an expedition to
+            hunt down the creature, along with his estranged wife, a beautiful
+            journalist and a co-pilot who could possibly be Zissou's son.
+          </p>
+
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=UpU0DZXTGA0&ab_channel=thecoolidge"
+            target="_blank"
+          >
+            Trailer</a
+          >
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt0362270/?ref_=nm_flmg_dr_16"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+
+        <div class="film">
+          <h4>The Royal Tenenbaums</h4>
+
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/497/original/royal-tenenbaums.jpg?1620143798"
+            alt=""
+          />
+          <p class="filmText">
+            Three grown prodigies, all with a unique genius of some kind, and
+            their mother are staying at the family household. Their father,
+            Royal had left them long ago, and comes back to make things right
+            with his family.
+          </p>
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=-DNAI9bhBFU&ab_channel=thecoolidge"
+            target="_blank"
+          >
+            Trailer</a
+          >
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt0265666/?ref_=nm_flmg_dr_17"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+        <div class="film">
+          <h4>Rushmore</h4>
+
+          <img
+            class="movieCover"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/498/original/rushmore.jpg?1620143805"
+            alt=""
+          />
+          <p class="filmText">
+            The fate of a precocious 15-year-old becomes inextricably tied to an
+            odd love triangle involving him, Miss Cross, a pretty teacher of the
+            elementary school at Rushmore, and Herman Blume, wealthy
+            industrialist and father to boys who attend the school.
+          </p>
+          <a
+            class="moreInfo"
+            href="https://www.youtube.com/watch?v=6ZVdXXG3KN8&ab_channel=MovieclipsClassicTrailers"
+            target="_blank"
+          >
+            Trailer</a
+          >
+          <a
+            class="moreInfo"
+            href="https://www.imdb.com/title/tt0128445/?ref_=nm_flmg_dr_18"
+            target="_blank"
+          >
+            More info</a
+          >
+        </div>
+      </div>
+
+      <hr />
+      <h3>THE FRENCH DISPATCH</h3>
+
+      <hr />
+
+      <h5>
+        Coming soon
+        <br />
+        July 2021
+      </h5>
+      <p class="frenchDispatch">
+        Wes Anderson’s next film, the comedy drama
+        <strong>The French Dispatch</strong>, is finally set for a premiere
+        following multiple delays as a result of the COVID-19 pandemic. The
+        project will debut at the Cannes Film Festival during its run from July
+        6 through the 17th.
+        <br />
+        <strong>The French Dispatch</strong> is a love letter to journalists set
+        in an outpost of an American newspaper in a fictional twentieth century
+        French city that brings to life a collection of stories published in
+        "The French Dispatch Magazine"
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/wKaCY-gm1h4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <button class="watchHere">Watch the full movie here</button>
+
+      <div class="footer">
+        <p>
+          <em> This page was built by </em>
+
+          <strong> Joana Vasconcelos </strong>
+          <br />
+
+          <a href="https://www.instagram.com/joana_vc/" target="_blank">
+            <img
+              class="socialMedia"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/555/original/instagram-button-blue.png?1620170825"
+              alt="instagram"
+          /></a>
+
+          <a
+            href="https://www.linkedin.com/in/joana-vasconcelos-carvalheiro-569056a5/"
+            target="_blank"
+          >
+            <img
+              class="socialMedia"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/554/original/linkedin-button-blue.png?1620170818"
+              alt="linkedin"
+          /></a>
+        </p>
+      </div>
+    </div>
+    <script>
+      function watch() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age >= 16) {
+          let email = prompt("What is your email?");
+          alert(
+            `Thank you, ${name}! We've sent you a link for you to watch the film as soon as it comes out! 🎥🎞️`
+          );
+        } else {
+          alert(
+            `Sorry, ${name}, the movie is rated R. Watch other Wes Anderson films in the meantime!`
+          );
+        }
+      }
+
+      let watchButton = document.querySelector(".watchHere");
+      watchButton.addEventListener("click", watch);
+    </script>
+  </body>
+</html>
