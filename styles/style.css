@@ -46,6 +46,11 @@ ul {
 
 li {
   display: inline-block;
+}
+
+.header-links {
+    text-decoration: none;
+    display: inline-block;
   margin: 50px 20px 30px 20px;
   font-family: "Josefin Sans";
   transition: all 200ms ease-in-out;
@@ -57,8 +62,9 @@ li {
   border-radius: 2px;
 }
 
-li:hover {
-  cursor: pointer;
+.header-links:hover {
+    
+    cursor: pointer;
   color: rgba(238, 162, 139, 1);
   background: #c54426;
 }
