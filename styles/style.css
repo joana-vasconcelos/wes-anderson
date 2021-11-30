@@ -234,6 +234,10 @@ button:hover {
   border: 2px solid #c54426;
 }
 
+.footer {
+    text-align: center;
+}
+
 .footer .built-by {
   font-family: "Josefin Sans";
   font-size: 14px;
@@ -243,9 +247,10 @@ button:hover {
 }
 
 .footer .social-links a {
-  margin: 0 10px 20px;
+  margin: 5px 10px 20px;
   color: #7c9383;
   background: transparent;
+  display: inline-block;
   font-size: 22px;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
