@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-family: "futura", sans-serif;
+  font-family: "futura", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   font-size: 32px;
   color: #fbc03e;
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-family: "futura", sans-serif;
+  font-family: "futura", Arial, Helvetica, sans-serif;
   letter-spacing: 4px;
   font-size: 50px;
   color: #fbc03e;
@@ -49,8 +49,8 @@ li {
 }
 
 .header-links {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
   margin: 50px 20px 30px 20px;
   font-family: "Josefin Sans";
   transition: all 200ms ease-in-out;
@@ -63,14 +63,13 @@ li {
 }
 
 .header-links:hover {
-    
-    cursor: pointer;
+  cursor: pointer;
   color: rgba(238, 162, 139, 1);
   background: #c54426;
 }
 
 h3 {
-  font-family: "futura";
+  font-family: "futura", Arial, Helvetica, sans-serif;
   font-size: 28px;
   color: #c54426;
   text-align: center;
