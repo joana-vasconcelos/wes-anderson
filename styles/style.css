@@ -1,0 +1,245 @@
+body {
+        background: linear-gradient(#fbc03e, #fddf9e);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100%;
+        background-size: cover;
+      }
+
+      .header {
+        text-align: center;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/509/original/header-top.jpg?1620153106);
+        max-width: 100%;
+        padding: 10px;
+        background-size: cover;
+        height: 275px;
+        margin: 0 0 40px 0;
+      }
+
+      h1 {
+        font-family: "futura", sans-serif;
+        letter-spacing: 1px;
+        font-size: 32px;
+        color: #fbc03e;
+        margin: 50px 0 5px 0;
+      }
+
+      h2 {
+        font-family: "futura", sans-serif;
+        letter-spacing: 4px;
+        font-size: 50px;
+        color: #fbc03e;
+        margin: 10px 0 10px 0;
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0px;
+      }
+
+      li {
+        display: inline-block;
+        margin: 50px 20px 30px 20px;
+        font-family: "Josefin Sans";
+        transition: all 200ms ease-in-out;
+        color: #c54426;
+        font-weight: bold;
+        background: rgba(238, 162, 139, 1);
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 2px;
+      }
+
+      li:hover {
+        cursor: pointer;
+        color: rgba(238, 162, 139, 1);
+        background: #c54426;
+      }
+
+      h3 {
+        font-family: "futura";
+        font-size: 28px;
+        color: #c54426;
+        text-align: center;
+        margin: 10px auto 5px auto;
+        letter-spacing: 3px;
+      }
+
+      hr {
+        width: 1060px;
+        height: 2px;
+        background: #c54426;
+        border: none;
+        margin: 10px auto;
+      }
+
+      .titles {
+        font-size: 22px;
+        font-weight: bold;
+        color: #c54426;
+      }
+
+      .text {
+        font-family: "Arvo";
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin: 20px 100px;
+        line-height: 30px;
+        text-align: justify;
+      }
+
+      .andersonExplained {
+        width: 350px;
+        display: inline-block;
+        margin: 5px auto;
+        max-width: 100%;
+      }
+
+      .images {
+        text-align: center;
+        display: block;
+      }
+
+      .footerStyle {
+        font-family: "Josefin Sans";
+        font-size: 10px;
+        text-align: right;
+        color: #7c9383;
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px auto 30px auto;
+      }
+
+      .film {
+        text-align: center;
+        margin: 10px;
+        background: rgba(238, 162, 139, 0.7);
+        padding: 5px 5px 5px 5px;
+        transition: all 200ms ease-in-out;
+        border-radius: 3px;
+        max-width: 280px;
+      }
+
+      .movieCover {
+        width: 250px;
+        margin: 5px;
+        border-radius: 3px;
+      }
+
+      h4 {
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #7c9383;
+        margin: 10px 0 5px 0;
+        padding: 7px;
+        border-radius: 2px;
+        font-weight: bold;
+      }
+
+      .filmText {
+        font-family: "Arvo";
+        font-size: 11px;
+        margin: 0 20px 5px 20px;
+        line-height: 18px;
+        text-align: justify;
+      }
+
+      h5 {
+        font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #7c9383;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px auto;
+      }
+
+      .frenchDispatch {
+        font-family: "Arvo";
+        font-size: 16px;
+        margin: 20px 125px 30px 125px;
+        line-height: 30px;
+        text-align: justify;
+      }
+
+      iframe {
+        display: block;
+        margin: 20px auto;
+      }
+
+      .moreInfo {
+        color: #fbc03e;
+        background: #c54426;
+        border: 2px solid #c54426;
+        padding: 6px 8px;
+        font-family: "futura", Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        max-width: 60px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .moreInfo:hover {
+        cursor: pointer;
+        background: #fbc03e;
+        color: #c54426;
+        border: 2px solid #c54426;
+      }
+
+      .watchHere {
+        color: #fbc03e;
+        background: #c54426;
+        border: 2px solid #c54426;
+        padding: 15px 20px;
+        font-family: "futura", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto;
+        transition: all 300ms ease-in-out;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #fbc03e;
+        color: #c54426;
+        border: 2px solid #c54426;
+      }
+
+      .footer {
+        font-family: "Josefin Sans";
+        font-size: 12px;
+        text-align: center;
+        color: #7c9383;
+        padding: 5px;
+      }
+
+      .socialMedia {
+        width: 18px;
+        display: inline;
+        position: relative;
+        margin: 8px 4px 0px 4px;
+      }
